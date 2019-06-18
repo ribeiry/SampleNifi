@@ -17,4 +17,6 @@ Para efetuar essa POC foi feita da seguinte forma:
 **Atenção para conseguir efetuar o versionamento do DataFlow via git é necessário que a versão minima do Nifi-Registry seja 0.2.0, a versão utilizada neste Sample foi a 0.4.0** 
 
 Informações Obtidas apartir do seguinte tutorial:
-[https://community.hortonworks.com/articles/210286/storing-apache-nifi-versioned-flows-in-a-git-repos.html](Link do Tutorial)
+
+[Link do Tutorial](https://community.hortonworks.com/articles/210286/storing-apache-nifi-versioned-flows-in-a-git-repos.html) 
+
