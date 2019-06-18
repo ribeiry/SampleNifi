@@ -2,7 +2,7 @@
 
 Sample Nifi é o repositorio que tem o objetivo de efetuar uma POC(Prove Of Concept) de que é possivel efetuar o versionamento do DataFlow do Nifi no GitHub.
 
-Para efetuar essa POC foi feita da seguinte forma:
+### Passo a passo efetuar essa POC foi feita da seguinte forma:
 
 1. Instalando o Nifi;
 2. Feito um diagrama simples;
@@ -20,3 +20,8 @@ Informações Obtidas apartir do seguinte tutorial:
 
 [Link do Tutorial](https://community.hortonworks.com/articles/210286/storing-apache-nifi-versioned-flows-in-a-git-repos.html) 
 
+Imagem do passo 6 
+
+Caminho do arquivo `./conf`
+
+![Image](./img/Untitled.png)	
