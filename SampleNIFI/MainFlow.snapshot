@@ -10,6 +10,102 @@
         "connections" : [ {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 940.3666381835938,
+            "y" : 72.0
+          }, {
+            "x" : 940.3666381835938,
+            "y" : 122.0
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "f5a12a0b-89f8-3dde-9587-27b4697cdcb6",
+            "id" : "13c9e6e6-2148-36df-b7ac-50b518b065be",
+            "name" : "AttributesToJSON",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "f5a12a0b-89f8-3dde-9587-27b4697cdcb6",
+          "identifier" : "aecd8c85-fc90-3d15-b1be-ff5472413203",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "f5a12a0b-89f8-3dde-9587-27b4697cdcb6",
+            "id" : "13c9e6e6-2148-36df-b7ac-50b518b065be",
+            "name" : "AttributesToJSON",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "f5a12a0b-89f8-3dde-9587-27b4697cdcb6",
+            "id" : "13c9e6e6-2148-36df-b7ac-50b518b065be",
+            "name" : "AttributesToJSON",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "f5a12a0b-89f8-3dde-9587-27b4697cdcb6",
+          "identifier" : "3cdfa538-0649-35f5-a10a-dc252aa97dd6",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "f5a12a0b-89f8-3dde-9587-27b4697cdcb6",
+            "id" : "b6023d4d-da8c-3594-8ef0-b83516a60495",
+            "name" : "TailFile",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "f5a12a0b-89f8-3dde-9587-27b4697cdcb6",
+            "id" : "23724627-5777-3b60-abca-e33c03929213",
+            "name" : "PutFile",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "f5a12a0b-89f8-3dde-9587-27b4697cdcb6",
+          "identifier" : "30974cc4-26d8-3d0f-9da8-ee2886226a35",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "f5a12a0b-89f8-3dde-9587-27b4697cdcb6",
+            "id" : "13c9e6e6-2148-36df-b7ac-50b518b065be",
+            "name" : "AttributesToJSON",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -46,11 +142,165 @@
         "name" : "MainGroup",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 502.03912353515625,
-          "y" : -262.9380192756653
+          "x" : 716.8451538085938,
+          "y" : -271.8882451057434
         },
         "processGroups" : [ ],
         "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.9.2"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "f5a12a0b-89f8-3dde-9587-27b4697cdcb6",
+          "identifier" : "13c9e6e6-2148-36df-b7ac-50b518b065be",
+          "name" : "AttributesToJSON",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 477.36663818359375,
+            "y" : 32.0
+          },
+          "properties" : {
+            "Destination" : "flowfile-content",
+            "Null Value" : "false",
+            "Include Core Attributes" : "true"
+          },
+          "propertyDescriptors" : {
+            "attributes-to-json-regex" : {
+              "displayName" : "Attributes Regular Expression",
+              "identifiesControllerService" : false,
+              "name" : "attributes-to-json-regex",
+              "sensitive" : false
+            },
+            "Destination" : {
+              "displayName" : "Destination",
+              "identifiesControllerService" : false,
+              "name" : "Destination",
+              "sensitive" : false
+            },
+            "Null Value" : {
+              "displayName" : "Null Value",
+              "identifiesControllerService" : false,
+              "name" : "Null Value",
+              "sensitive" : false
+            },
+            "Attributes List" : {
+              "displayName" : "Attributes List",
+              "identifiesControllerService" : false,
+              "name" : "Attributes List",
+              "sensitive" : false
+            },
+            "Include Core Attributes" : {
+              "displayName" : "Include Core Attributes",
+              "identifiesControllerService" : false,
+              "name" : "Include Core Attributes",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.AttributesToJSON",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.9.2"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "f5a12a0b-89f8-3dde-9587-27b4697cdcb6",
+          "identifier" : "b6023d4d-da8c-3594-8ef0-b83516a60495",
+          "name" : "TailFile",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 256.3666076660156,
+            "y" : 410.0
+          },
+          "properties" : {
+            "tailfile-recursive-lookup" : "false",
+            "File Location" : "Local",
+            "tailfile-maximum-age" : "24 hours",
+            "File to Tail" : "/var/log/jenkins/jenkins.log",
+            "Initial Start Position" : "Beginning of File",
+            "tailfile-lookup-frequency" : "10 minutes",
+            "tail-mode" : "Single file"
+          },
+          "propertyDescriptors" : {
+            "tail-base-directory" : {
+              "displayName" : "Base directory",
+              "identifiesControllerService" : false,
+              "name" : "tail-base-directory",
+              "sensitive" : false
+            },
+            "tailfile-recursive-lookup" : {
+              "displayName" : "Recursive lookup",
+              "identifiesControllerService" : false,
+              "name" : "tailfile-recursive-lookup",
+              "sensitive" : false
+            },
+            "File Location" : {
+              "displayName" : "State Location",
+              "identifiesControllerService" : false,
+              "name" : "File Location",
+              "sensitive" : false
+            },
+            "tailfile-maximum-age" : {
+              "displayName" : "Maximum age",
+              "identifiesControllerService" : false,
+              "name" : "tailfile-maximum-age",
+              "sensitive" : false
+            },
+            "Rolling Filename Pattern" : {
+              "displayName" : "Rolling Filename Pattern",
+              "identifiesControllerService" : false,
+              "name" : "Rolling Filename Pattern",
+              "sensitive" : false
+            },
+            "File to Tail" : {
+              "displayName" : "File(s) to Tail",
+              "identifiesControllerService" : false,
+              "name" : "File to Tail",
+              "sensitive" : false
+            },
+            "Initial Start Position" : {
+              "displayName" : "Initial Start Position",
+              "identifiesControllerService" : false,
+              "name" : "Initial Start Position",
+              "sensitive" : false
+            },
+            "tailfile-lookup-frequency" : {
+              "displayName" : "Lookup frequency",
+              "identifiesControllerService" : false,
+              "name" : "tailfile-lookup-frequency",
+              "sensitive" : false
+            },
+            "tail-mode" : {
+              "displayName" : "Tailing mode",
+              "identifiesControllerService" : false,
+              "name" : "tail-mode",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.TailFile",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ "success", "failure" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -67,8 +317,89 @@
           "name" : "PutFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1062.0,
-            "y" : 207.0
+            "x" : 1316.0,
+            "y" : 187.0
+          },
+          "properties" : {
+            "Create Missing Directories" : "true",
+            "Directory" : "/home/augusto/Documents/nifi/",
+            "Conflict Resolution Strategy" : "fail"
+          },
+          "propertyDescriptors" : {
+            "Group" : {
+              "displayName" : "Group",
+              "identifiesControllerService" : false,
+              "name" : "Group",
+              "sensitive" : false
+            },
+            "Owner" : {
+              "displayName" : "Owner",
+              "identifiesControllerService" : false,
+              "name" : "Owner",
+              "sensitive" : false
+            },
+            "Create Missing Directories" : {
+              "displayName" : "Create Missing Directories",
+              "identifiesControllerService" : false,
+              "name" : "Create Missing Directories",
+              "sensitive" : false
+            },
+            "Permissions" : {
+              "displayName" : "Permissions",
+              "identifiesControllerService" : false,
+              "name" : "Permissions",
+              "sensitive" : false
+            },
+            "Maximum File Count" : {
+              "displayName" : "Maximum File Count",
+              "identifiesControllerService" : false,
+              "name" : "Maximum File Count",
+              "sensitive" : false
+            },
+            "Last Modified Time" : {
+              "displayName" : "Last Modified Time",
+              "identifiesControllerService" : false,
+              "name" : "Last Modified Time",
+              "sensitive" : false
+            },
+            "Directory" : {
+              "displayName" : "Directory",
+              "identifiesControllerService" : false,
+              "name" : "Directory",
+              "sensitive" : false
+            },
+            "Conflict Resolution Strategy" : {
+              "displayName" : "Conflict Resolution Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Conflict Resolution Strategy",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.PutFile",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "success", "failure" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.9.2"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "f5a12a0b-89f8-3dde-9587-27b4697cdcb6",
+          "identifier" : "23724627-5777-3b60-abca-e33c03929213",
+          "name" : "PutFile",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 722.3666687011719,
+            "y" : 413.0
           },
           "properties" : {
             "Create Missing Directories" : "true",
@@ -148,8 +479,8 @@
           "name" : "TailFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 301.0,
-            "y" : 205.0
+            "x" : 1315.0000305175781,
+            "y" : 436.0
           },
           "properties" : {
             "tailfile-recursive-lookup" : "false",
